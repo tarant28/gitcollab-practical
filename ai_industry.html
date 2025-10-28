@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI in the Modern World</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            /* Keep images responsive but prevent them from shrinking too far vertically.
+                 Wrap images in a .img-wrapper to apply the min-height while preserving aspect ratio. */
+            .img-wrapper {
+                min-height: 200px; /* minimum displayed image height; adjust as needed */
+                display: block;
+                width: 100%;
+            }
+            .img-wrapper img {
+                width: 100%;    /* shrink horizontally with the column */
+                height: 100%;   /* match wrapper height (will be >= min-height) */
+                object-fit: contain; /* preserve aspect ratio and letterbox if needed */
+                display: block;
+            }
+            @media (min-width: 768px) {
+                /* on larger screens allow images to grow naturally but keep min-height */
+                .img-wrapper { min-height: 180px; }
+            }
+        </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -50,83 +69,110 @@
     </h1>
 
     <h2>Healthcare</h2>
-    <p>
-        Artificial intelligence is transforming healthcare by enabling earlier and 
-        more accurate disease detection, personalising treatment plans based on 
-        individual patient data, and accelerating drug discovery to bring life-saving 
-        therapies to market faster. AI-powered tools also support virtual health 
-        assistants and streamline administrative work, freeing clinicians to focus 
-        on the human side of care. In short, AI is helping improve outcomes, increase 
-        access to care and reduce costs across the health system.
-    </p>
-
-    <figure>
-        <blockquote class="blockquote">
+    <div class="row align-item-start">
+        <div class="col-md-8">
             <p>
-                "It's estimated that AI could free up to 25% of clinician time across 
-                different specialties. This increased amount of time could mean less 
-                hurried encounters and more humane interactions, including more 
-                empathy from happier doctors. This is important because empathy 
-                has been shown to improve outcomes by boosting patient adherence 
-                to the prescribed treatments, increasing motivation, and reducing 
-                anxiety and stress."
+                Artificial intelligence is transforming healthcare by enabling earlier and 
+                more accurate disease detection, personalising treatment plans based on 
+                individual patient data, and accelerating drug discovery to bring life-saving 
+                therapies to market faster. AI-powered tools also support virtual health 
+                assistants and streamline administrative work, freeing clinicians to focus 
+                on the human side of care. In short, AI is helping improve outcomes, increase 
+                access to care and reduce costs across the health system.
             </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Ronald M. Razmi, 
-            <cite title="Source Title">
-                AI Doctor: The Rise of Artificial Intelligence in Healthcare - A Guide for 
-                Users, Buyers, Builders, and Investors
-            </cite>
-        </figcaption>
-    </figure>
+
+            <figure>
+                <blockquote class="blockquote">
+                    <p>
+                        "It's estimated that AI could free up to 25% of clinician time across 
+                        different specialties. This increased amount of time could mean less 
+                        hurried encounters and more humane interactions, ...
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Ronald M. Razmi, 
+                    <cite title="Source Title">
+                        AI Doctor: The Rise of Artificial Intelligence in Healthcare - A Guide for 
+                        Users, Buyers, Builders, and Investors
+                    </cite>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="col-md-4">
+            <div class="img-wrapper">
+              <img src="https://medcitynews.com/wp-content/uploads/sites/7/2021/12/GettyImages-1054930874-600x339.jpg"
+                       class="rounded" alt="ai and healthcare by adam fard studio">
+            </div>
+        </div>
+    </div>
 
     <h2>Environment and Sustainability</h2>
-    <p>
-        AI contributes to environmental sustainability by helping scientists 
-        model climate patterns more precisely, optimising energy consumption 
-        in buildings and smart grids, and monitoring wildlife or illegal 
-        activities to protect ecosystems. By embedding intelligence into our 
-        systems, we are better equipped to reduce carbon footprints, recycle 
-        resources and safeguard the planet for future generations.
-    </p>
-
-    <figure>
-        <blockquote class="blockquote">
+    <div class="row align-item-start">
+        <div class="col-md-8">
             <p>
-                "Artificial intelligence has many bigger roles to play for environmental 
-                sustainability, energy recycling, and pollution prevention."
+                AI contributes to environmental sustainability by helping scientists 
+                model climate patterns more precisely, optimising energy consumption 
+                in buildings and smart grids, and monitoring wildlife or illegal 
+                activities to protect ecosystems. By embedding intelligence into our 
+                systems, we are better equipped to reduce carbon footprints, recycle 
+                resources and safeguard the planet for future generations.
             </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-           Sri Amit Ray, 
-            <cite title="Source Title">
-                Ethical AI Systems: Frameworks, Principles, and Advanced Practices
-            </cite>
-        </figcaption>
-    </figure>
+
+            <figure>
+                <blockquote class="blockquote">
+                    <p>
+                        "Artificial intelligence has many bigger roles to play for environmental 
+                        sustainability, energy recycling, and pollution prevention."
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                Sri Amit Ray, 
+                    <cite title="Source Title">
+                        Ethical AI Systems: Frameworks, Principles, and Advanced Practices
+                    </cite>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4">
+            <div class="img-wrapper">
+              <img src="https://www.shutterstock.com/image-photo/ai-artificial-intelligence-analysis-environmental-600nw-2285092389.jpg"
+                       class="rounded" alt="ai and environment by medium">
+            </div>
+        </div>
+    </div>
 
     <h2>Business and Economy</h2>
-    <p>
-       AI is rapidly reshaping business and the economy by automating routine tasks, 
-       enabling smarter fraud detection in finance, powering personalised customer 
-       experiences and creating entirely new industries. In effect, AI is become a core 
-       driver of productivity growth, innovation and economic transformation across sectors.
-    </p>
-
-    <figure>
-        <blockquote class="blockquote">
+    <div class="row align-item-start">
+        <div class="col-md-8">
             <p>
-                AI will not destroy jobs — it will destroy tasks. That's a big difference.
+            AI is rapidly reshaping business and the economy by automating routine tasks, 
+            enabling smarter fraud detection in finance, powering personalised customer 
+            experiences and creating entirely new industries. In effect, AI is become a core 
+            driver of productivity growth, innovation and economic transformation across sectors.
             </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Marc Andreessen (Co-founder, a16z) 
-            <cite title="Source Title">
-                Andreessen argues that AI will reshape work, not eliminate workers
-            </cite>
-        </figcaption>
-    </figure>
+
+            <figure>
+                <blockquote class="blockquote">
+                    <p>
+                        AI will not destroy jobs — it will destroy tasks. That's a big difference.
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Marc Andreessen (Co-founder, a16z) 
+                    <cite title="Source Title">
+                        Andreessen argues that AI will reshape work, not eliminate workers
+                    </cite>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4">
+            <div class="img-wrapper">
+              <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=612x612&w=0&k=20&c=vmC-jVG6PNPRQtgtBp2y1caApEGYjt-fDrm0VzRgvK8="
+                       class="rounded" alt="ai and business by weforum">
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
