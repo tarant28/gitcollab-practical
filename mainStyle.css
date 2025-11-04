@@ -1,0 +1,25 @@
+
+.navbar{
+    border: 1px solid #d3d3d3;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 0.5rem 1rem;
+};
+
+/* Keep images responsive but prevent them from shrinking too far vertically.
+Wrap images in a .img-wrapper to apply the min-height while preserving aspect ratio. */
+.img-wrapper {
+    min-height: 200px; /* minimum displayed image height; adjust as needed */
+    display: block;
+    width: 100%;
+}
+.img-wrapper img {
+    width: 100%;    /* shrink horizontally with the column */
+    height: 100%;   /* match wrapper height (will be >= min-height) */
+    object-fit: contain; /* preserve aspect ratio and letterbox if needed */
+    display: block;
+}
+@media (min-width: 768px) {
+    /* on larger screens allow images to grow naturally but keep min-height */
+    .img-wrapper { min-height: 180px; }
+}
