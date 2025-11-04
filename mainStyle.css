@@ -12,6 +12,7 @@ Wrap images in a .img-wrapper to apply the min-height while preserving aspect ra
     min-height: 200px; /* minimum displayed image height; adjust as needed */
     display: block;
     width: 100%;
+
 }
 .img-wrapper img {
     width: 100%;    /* shrink horizontally with the column */
@@ -19,6 +20,7 @@ Wrap images in a .img-wrapper to apply the min-height while preserving aspect ra
     object-fit: contain; /* preserve aspect ratio and letterbox if needed */
     display: block;
 }
+
 @media (min-width: 768px) {
     /* on larger screens allow images to grow naturally but keep min-height */
     .img-wrapper { min-height: 180px; }

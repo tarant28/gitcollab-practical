@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI in the Modern World</title>
         <link rel="stylesheet" href="mainStyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <style>
-            
-        </style>
+        <link rel="stylesheet" href="aistyling.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -41,15 +39,14 @@
             </div>
         </div>
         </nav>
-
     <h1 class="display-1">
         Artificial Intelligence
         <small class="text-muted">(AI)</small>
     </h1>
 
-    <h2>Healthcare</h2>
-    <div class="row align-item-start">
+    <div class="row g-5">
         <div class="col-md-8">
+            <h2>Healthcare</h2>
             <p>
                 Artificial intelligence is transforming healthcare by enabling earlier and 
                 more accurate disease detection, personalising treatment plans based on 
@@ -76,19 +73,58 @@
                     </cite>
                 </figcaption>
             </figure>
-        </div>
 
-        <div class="col-md-4">
-            <div class="img-wrapper">
-              <img src="https://medcitynews.com/wp-content/uploads/sites/7/2021/12/GettyImages-1054930874-600x339.jpg"
-                       class="rounded" alt="ai and healthcare by adam fard studio">
-            </div>
-        </div>
-    </div>
+            <h3>Key applications</h3>
+            <ul>
+                <li><strong>Medical imaging:</strong> computer vision helps detect anomalies in X-rays, CT and MRI, assisting radiologists with triage and second reads.</li>
+                <li><strong>Predictive analytics:</strong> models identify patients at risk of readmission, sepsis, or deterioration to enable earlier intervention.</li>
+                <li><strong>Personalised medicine:</strong> algorithms match therapies to genetic markers and patient profiles and support dosing optimisation.</li>
+                <li><strong>Clinical decision support:</strong> summarise patient histories and surface guideline-based recommendations during consultations.</li>
+                <li><strong>Operational efficiency:</strong> automate coding, prior authorisations, scheduling, and claims review to reduce admin burden.</li>
+                <li><strong>Virtual care:</strong> chatbots and ambient scribe tools support remote monitoring and documentation.</li>
+            </ul>
 
-    <h2>Environment and Sustainability</h2>
-    <div class="row align-item-start">
-        <div class="col-md-8">
+            <h3>Benefits and challenges</h3>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Benefits</th>
+                        <th>Challenges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Faster diagnoses</td>
+                        <td>Data quality and bias</td>
+                    </tr>
+                    <tr>
+                        <td>Fewer errors</td>
+                        <td>Privacy and security</td>
+                    </tr>
+                    <tr>
+                        <td>More time for patient care</td>
+                        <td>Model explainability</td>
+                    </tr>
+                    <tr>
+                        <td>Lower costs</td>
+                        <td>Clinical validation</td>
+                    </tr>
+                    <tr>
+                        <td>Broader access via telehealth</td>
+                        <td>Regulatory approval</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Real-world examples</h3>
+            <ul>
+                <li>Radiology triage flags suspected strokes and fractures for priority review.</li>
+                <li>Early-warning systems monitor vitals to predict sepsis risk hours before onset.</li>
+                <li>Drug discovery platforms explore molecule candidates and propose targets to shorten R&amp;D cycles.</li>
+            </ul>
+
+            <h2>Environment and Sustainability</h2>
             <p>
                 AI contributes to environmental sustainability by helping scientists 
                 model climate patterns more precisely, optimising energy consumption 
@@ -106,29 +142,36 @@
                     </p>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                Sri Amit Ray, 
+                    Sri Amit Ray, 
                     <cite title="Source Title">
                         Ethical AI Systems: Frameworks, Principles, and Advanced Practices
                     </cite>
                 </figcaption>
             </figure>
-        </div>
-        <div class="col-md-4">
-            <div class="img-wrapper">
-              <img src="https://www.shutterstock.com/image-photo/ai-artificial-intelligence-analysis-environmental-600nw-2285092389.jpg"
-                       class="rounded" alt="ai and environment by medium">
-            </div>
-        </div>
-    </div>
 
-    <h2>Business and Economy</h2>
-    <div class="row align-item-start">
-        <div class="col-md-8">
+            <h3>Where AI helps</h3>
+            <ul>
+                <li><strong>Energy:</strong> forecast demand, optimise grid dispatch, integrate renewables, and detect faults in wind/solar assets.</li>
+                <li><strong>Buildings:</strong> smart controls learn occupancy patterns to tune HVAC and lighting, cutting energy use.</li>
+                <li><strong>Agriculture:</strong> precision farming analyses soil, weather, and satellite data to reduce water and fertiliser.</li>
+                <li><strong>Climate science:</strong> downscaling models and emulators speed up simulations and uncertainty analysis.</li>
+                <li><strong>Monitoring:</strong> computer vision from drones/satellites tracks deforestation, wildfires, and illegal fishing.</li>
+                <li><strong>Waste and recycling:</strong> vision systems sort materials and optimise collection routes.</li>
+            </ul>
+
+            <h3>Impact and considerations</h3>
+            <ul>
+                <li><strong>Impact:</strong> lower emissions, improved resilience, and better measurement of progress.</li>
+                <li><strong>Considerations:</strong> data gaps in the Global South, embodied energy of compute, and the need for transparent, verifiable metrics.</li>
+                <li><strong>Best practice:</strong> pair AI with domain expertise, open data where possible, and strong governance to avoid greenwashing.</li>
+            </ul>
+
+            <h2>Business and Economy</h2>
             <p>
-            AI is rapidly reshaping business and the economy by automating routine tasks, 
-            enabling smarter fraud detection in finance, powering personalised customer 
-            experiences and creating entirely new industries. In effect, AI is become a core 
-            driver of productivity growth, innovation and economic transformation across sectors.
+                AI is rapidly reshaping business and the economy by automating routine tasks, 
+                enabling smarter fraud detection in finance, powering personalised customer 
+                experiences and creating entirely new industries. In effect, AI is becoming a core 
+                driver of productivity growth, innovation and economic transformation across sectors.
             </p>
 
             <figure>
@@ -144,13 +187,54 @@
                     </cite>
                 </figcaption>
             </figure>
+
+            <h3>Use cases across functions</h3>
+            <ul>
+                <li><strong>Marketing and sales:</strong> customer segmentation, propensity modelling, next-best action, and dynamic pricing.</li>
+                <li><strong>Operations:</strong> demand forecasting, inventory optimisation, route planning, and predictive maintenance.</li>
+                <li><strong>Finance and risk:</strong> anomaly detection for fraud, credit scoring, and automated reconciliation.</li>
+                <li><strong>Customer service:</strong> chatbots, summarisation, and agent assist to reduce handle time and improve satisfaction.</li>
+                <li><strong>HR and talent:</strong> candidate screening, skills mapping, and internal mobility matching.</li>
+                <li><strong>Product:</strong> recommendation systems and generative design to accelerate experimentation.</li>
+            </ul>
+
+            <h3>Productivity and workforce</h3>
+            <ul>
+                <li>Task automation shifts roles toward higher-value judgement and creativity; workflows are redesigned rather than removed wholesale.</li>
+                <li>Augmented tools raise output for both novices and experts; training and change management determine realised gains.</li>
+                <li>Reskilling in data literacy, prompt engineering, and governance becomes a core investment.</li>
+            </ul>
+
+            <h3>Governance and risk</h3>
+            <ul>
+                <li>Establish model risk management: testing, monitoring, and rollback plans.</li>
+                <li>Address privacy, IP, and bias with policies, human oversight, and audit trails.</li>
+                <li>Measure ROI with pilot-to-production playbooks and clear KPIs aligned to business goals.</li>
+            </ul>
         </div>
         <div class="col-md-4">
-            <div class="img-wrapper">
-              <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=612x612&w=0&k=20&c=vmC-jVG6PNPRQtgtBp2y1caApEGYjt-fDrm0VzRgvK8="
-                       class="rounded" alt="ai and business by weforum">
+            <div class="sticky-top">
+                <div class="p-4">
+                    <div class="img-wrapper">
+                        <img src="https://medcitynews.com/wp-content/uploads/sites/7/2021/12/GettyImages-1054930874-600x339.jpg"
+                            class="rounded" alt="ai and healthcare by adam fard studio">
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="img-wrapper">
+                        <img src="https://www.shutterstock.com/image-photo/ai-artificial-intelligence-analysis-environmental-600nw-2285092389.jpg"
+                            class="rounded" alt="ai and environment by medium">
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="img-wrapper">
+                        <img src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.jpg?s=612x612&w=0&k=20&c=vmC-jVG6PNPRQtgtBp2y1caApEGYjt-fDrm0VzRgvK8="
+                            class="rounded" alt="ai and business by weforum">
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
