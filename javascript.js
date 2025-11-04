@@ -72,5 +72,5 @@
       })
 
   })
-  
+  /*Credit for Javascript:https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript*/
 })()
